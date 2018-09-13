@@ -50,3 +50,12 @@ There are mainly two persistence options:
 * RDB: The RDB persistence performs point-in-time snapshots of your dataset at specified intervals.
 
 Further details can be found here: https://redis.io/topics/persistence
+
+## Replication
+
+
+You can establish a SlaveOf relationship between 2 Redis instances.
+
+```
+SLAVEOF <host> <port>
+```
