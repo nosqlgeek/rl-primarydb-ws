@@ -8,6 +8,8 @@ A single instance of Redis is basically
 
 However, with version 4.0 Redis became more threaded. For now this is limited to deleting objects in the background, and to blocking commands implemented via Redis modules.
 
+In addition, Redis is forking processes for i.e. snapshotting purposes.
+
 ### Event Loop
 
 You might know other system (i.e. Node.js) those are using an event loop approach. Here a simplified code example for an event loop:
