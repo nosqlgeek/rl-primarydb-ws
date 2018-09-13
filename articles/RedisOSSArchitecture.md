@@ -27,3 +27,17 @@ end function
 ### Order of Excution
 
 As a consequence, a single Redis instance is guaranteeing you to execute the commands in the order in which it received them.
+
+## Memory First
+
+Each operation is hitting the
+
+* Memory first
+
+. Redis' eviction is different from RDBM's eviction because 
+
+* All items within a Redis database have to fit into memory 
+
+. An exception is Redis on Flash in Redis Enterprise. 
+
+Further details about the eviction policies can be found here: https://redis.io/topics/lru-cache
