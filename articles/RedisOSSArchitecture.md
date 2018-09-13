@@ -41,3 +41,12 @@ Each operation is hitting the
 . An exception is Redis on Flash in Redis Enterprise. 
 
 Further details about the eviction policies can be found here: https://redis.io/topics/lru-cache
+
+## Persistency
+
+There are mainly two persistence options:
+
+* AOF: The append only file persistence logs every write operation received by the Redis server. You can enforce to write to the file for every write operation or every seconds.
+* RDB: The RDB persistence performs point-in-time snapshots of your dataset at specified intervals.
+
+Further details can be found here: https://redis.io/topics/persistence
